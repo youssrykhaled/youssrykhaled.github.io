@@ -56,21 +56,24 @@ nav a:hover { text-decoration: underline; }
   grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
   gap: clamp(2.15rem, 6vw, 6rem);
   align-items: center;
-  padding-block: clamp(3.75rem, 7vw, 6.5rem);
+  padding-block: clamp(3.25rem, 6vw, 5.6rem);
 }
 .eyebrow { margin-bottom: .7rem; color: var(--accent); font-size: .875rem; font-weight: 700; letter-spacing: .105em; text-transform: uppercase; }
 h1 { font-size: clamp(4.1rem, 7.7vw, 7.1rem); line-height: .95; letter-spacing: -.026em; }
 .affiliation { margin-top: .8rem; font-size: 1.04rem; color: var(--muted); font-weight: 600; }
 .affiliation span { padding-inline: .28rem; }
-.intro { margin-top: 1.65rem; max-width: 35ch; font-size: clamp(1.25rem, 2.1vw, 1.58rem); line-height: 1.35; font-weight: 580; letter-spacing: -.025em; }
-.description { max-width: 55ch; margin-top: .85rem; color: var(--muted); }
-.description a { font-weight: 600; }
 .profile-links { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1.35rem; margin-top: 1.5rem; }
 .profile-links a { font-size: .96rem; font-weight: 650; }
 .profile-links .primary-link { display: inline-block; padding: .72rem 1.13rem; border-radius: .35rem; background: var(--accent); color: var(--white); text-decoration: none; }
 .profile-links .primary-link:hover { background: var(--accent-dark); }
 .portrait { width: 100%; max-width: 31rem; justify-self: end; padding: .44rem; border: 1px solid var(--line); border-radius: .65rem; background: var(--white); }
 .portrait img { display: block; width: 100%; height: auto; aspect-ratio: 1.02; border-radius: .32rem; object-fit: cover; object-position: center 35%; }
+
+.about { padding-block: clamp(2.65rem, 5.2vw, 4.2rem); border-top: 1px solid var(--line); }
+.about-grid { display: grid; grid-template-columns: minmax(0, .75fr) minmax(0, 1.4fr); gap: 1.1rem 4rem; }
+.about-copy { max-width: 61ch; color: var(--muted); font-size: 1.0625rem; }
+.about-copy p + p { margin-top: .85rem; }
+.about-copy a { font-weight: 600; }
 
 .research { padding-block: clamp(3rem, 6vw, 4.8rem); border-block: 1px solid var(--line); background: var(--tint); }
 .research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem 2.7rem; margin-top: 1.85rem; }
@@ -107,7 +110,8 @@ h1 { font-size: clamp(4.1rem, 7.7vw, 7.1rem); line-height: .95; letter-spacing: 
   .shell { width: calc(100% - 2.5rem); }
   .header-inner { flex-wrap: wrap; padding-block: .65rem; }
   nav { gap: .2rem .74rem; }
-  .hero, .background-grid { grid-template-columns: minmax(0, 1fr); }
+  .nav-cv { display: none; }
+  .hero, .about-grid, .background-grid { grid-template-columns: minmax(0, 1fr); }
   .hero { gap: 1.65rem; padding-block: 2.6rem 3.25rem; }
   h1 { font-size: clamp(3.4rem, 12vw, 5.8rem); }
   .portrait { justify-self: start; }
